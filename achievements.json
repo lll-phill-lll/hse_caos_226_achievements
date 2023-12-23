@@ -12,10 +12,22 @@
       "description": "Многократно сдавать реджекнутую задачу без изменений"
     },
     {
-      "achievement": "Самый длинный код",
+      "achievement": "Самый длинный код!",
       "personName": "Шлыков Александр",
       "imageUrl": "data/long_code.png",
-      "description": "За посылку работающего кода из 29143 строк"
+      "description": "За отправку работающего кода из 29143 строк"
+    },
+    {
+      "achievement": "Под светом софитов!",
+      "personName": "Нина Кривулец",
+      "imageUrl": "data/star.png",
+      "description": "За всегда включенную камеру на семинарах."
+    },
+    {
+      "achievement": "Unstoppable!",
+      "personName": "Билый Александр",
+      "imageUrl": "data/unstoppable.png",
+      "description": "Не сдаваться и сдать задачу за 55 попыток."
     }
   ]
 
