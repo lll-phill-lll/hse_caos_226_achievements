@@ -68,12 +68,19 @@ h1 {
     border-radius: 10px;
     width: 200px;
     text-align: left;
+    z-index: 3; /* Уровень для открывающейся карточки */
 }
 
 .achievement:hover .description img {
-    margin-bottom: 10px; /* Добавленный стиль для отступа между изображением и текстом */
+    margin-bottom: 10px;
+    z-index: 1; /* Уровень для изображения в открывающейся карточке */
 }
 
 .achievement:hover .description p {
-    z-index: 1; /* Слой для текста в открывающейся карточке */
+    z-index: 2; /* Уровень для текста в открывающейся карточке */
+}
+
+/* Добавленный стиль для уровня картинок достижений */
+.achievement:not(:hover) {
+    z-index: 0;
 }
