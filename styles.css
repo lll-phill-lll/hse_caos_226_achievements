@@ -62,25 +62,25 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #fff; /* Изменен цвет фона на непрозрачный */
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     width: 200px;
     text-align: left;
-    z-index: 3; /* Уровень для открывающейся карточки */
+    z-index: 3;
 }
 
 .achievement:hover .description img {
     margin-bottom: 10px;
-    z-index: 1; /* Уровень для изображения в открывающейся карточке */
+    z-index: 1;
 }
 
 .achievement:hover .description p {
-    z-index: 2; /* Уровень для текста в открывающейся карточке */
+    margin-top: 4px;
+    z-index: 2;
 }
 
-/* Добавленный стиль для уровня картинок достижений */
 .achievement:not(:hover) {
     z-index: 0;
 }
