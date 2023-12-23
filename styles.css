@@ -29,6 +29,7 @@ h1 {
     margin: 10px;
     cursor: pointer;
     width: 200px;
+    z-index: 1;
 }
 
 .achievement img {
@@ -44,11 +45,19 @@ h1 {
 }
 
 .achievement p {
-    margin: 0; /* Убирает внешний отступ у абзацев в блоке .achievement */
+    margin: 0;
 }
 
 .achievement .description {
     display: none;
+    position: relative;
+    z-index: 2;
+}
+
+.achievement:hover .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,15 +70,10 @@ h1 {
     text-align: left;
 }
 
-.achievement:hover .description {
-    display: block;
+.achievement:hover .description img {
+    margin-bottom: 10px; /* Добавленный стиль для отступа между изображением и текстом */
 }
 
-.achievement .description p {
-    margin-bottom: 5px; /* Уменьшает нижний отступ у абзацев в описании */
-}
-
-.achievement .description strong {
-    display: block;
-    margin-bottom: 5px; /* Уменьшает нижний отступ у жирного текста в описании */
+.achievement:hover .description p {
+    z-index: 1; /* Слой для текста в открывающейся карточке */
 }
