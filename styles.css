@@ -29,7 +29,7 @@ h1 {
     margin: 10px;
     cursor: pointer;
     width: 200px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 .achievement img {
@@ -38,6 +38,7 @@ h1 {
     height: 100px;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
+    z-index: 4;
 }
 
 .achievement:hover img {
@@ -51,7 +52,7 @@ h1 {
 .achievement .description {
     display: none;
     position: relative;
-    z-index: 2;
+    /* z-index: 4; Установим более высокий уровень */
 }
 
 .achievement:hover .description {
@@ -62,25 +63,33 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff; /* Изменен цвет фона на непрозрачный */
+    background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     width: 200px;
-    text-align: left;
-    z-index: 3;
+    text-align: middle;
+    z-index: 4; /* Установим более высокий уровень */
+}
+
+.achievement .description img {
+    margin-bottom: 10px;
+    visibility: hidden; /* Добавлено */
+    z-index: 1; 
 }
 
 .achievement:hover .description img {
-    margin-bottom: 10px;
-    z-index: 1;
+    visibility: visible; /* Добавлено */
+    z-index: 1; 
 }
 
-.achievement:hover .description p {
-    margin-top: 4px;
+.achievement .description strong {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.achievement .description p {
     z-index: 2;
-}
-
-.achievement:not(:hover) {
-    z-index: 0;
+    margin-bottom: 10px;
 }

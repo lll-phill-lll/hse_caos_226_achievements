@@ -4,14 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('achievements.json')
         .then(response => response.json())
         .then(data => {
-            // Создаем массив промисов для всех асинхронных операций
             const promises = data.map(achievementData => displayAchievement(achievementData));
-
-            // Дожидаемся завершения всех операций перед добавлением в DOM
             return Promise.all(promises);
         })
         .then(elements => {
-            // После завершения всех операций добавляем элементы в DOM
             elements.forEach(element => achievementsContainer.appendChild(element));
         });
 
@@ -24,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
             imageElement.src = achievementData.imageUrl;
             imageElement.alt = achievementData.personName;
             imageElement.onload = function () {
-                // После загрузки изображения добавляем карточку с достижением
                 const textElement = document.createElement('p');
                 textElement.innerText = achievementData.achievement;
 
@@ -33,14 +28,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const descriptionElement = document.createElement('div');
                 descriptionElement.className = 'description';
-                descriptionElement.innerHTML = `<img src="${achievementData.imageUrl}" alt="${achievementData.personName}"><strong>${achievementData.achievement}</strong><p>${achievementData.personName}</p><p>${achievementData.description}</p>`;
+                descriptionElement.innerHTML = `
+                    <img src="${achievementData.imageUrl}" alt="${achievementData.personName}">
+                    <strong>Название достижения:</strong>
+                    <p>${achievementData.achievement}</p>
+                    <strong>Имя человека:</strong>
+                    <p>${achievementData.personName}</p>
+                    <strong>Описание:</strong>
+                    <p>${achievementData.description}</p>
+                `;
 
                 achievementElement.appendChild(imageElement);
                 achievementElement.appendChild(textElement);
                 achievementElement.appendChild(personElement);
                 achievementElement.appendChild(descriptionElement);
 
-                // Разрешаем промис после создания элемента
                 resolve(achievementElement);
             };
         });

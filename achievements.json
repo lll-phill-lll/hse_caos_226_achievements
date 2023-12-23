@@ -12,28 +12,10 @@
       "description": "Многократно сдавать реджекнутую задачу без изменений"
     },
     {
-        "achievement": "Покаталась на такси",
-        "personName": "Дарья",
-        "imageUrl": "data/sisyphus.png",
-        "description":"Хотела поехать на бизнесе, но приехал К+"
-      },
-      {
-        "achievement": "Проснулась",
-        "personName": "Дашка",
-        "imageUrl": "data/sisyphus.png",
-        "description":"Встала с кровати вовремя"
-      },
-      {
-        "achievement": "Поела",
-        "personName": "Дарич",
-        "imageUrl": "data/sisyphus.png",
-        "description":"И поела завтрак"
-      },
-      {
-          "achievement": "Покаталась на такси",
-          "personName": "Дарья",
-          "imageUrl": "data/sisyphus.png",
-          "description":"Хотела поехать на бизнесе, но приехал К+"
-        }
+      "achievement": "Самый длинный код",
+      "personName": "Шлыков Александр",
+      "imageUrl": "data/long_code.png",
+      "description": "За посылку работающего кода из 29143 строк"
+    }
   ]
 
