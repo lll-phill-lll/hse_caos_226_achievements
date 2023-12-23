@@ -1,0 +1,39 @@
+[
+    {
+      "achievement": "Ну молодец!",
+      "personName": "Миша Филитов",
+      "imageUrl": "data/misha.png",
+      "description":"И поел, и на столе прибрался, и в магазин сходил"
+    },
+    {
+      "achievement": "Что такое безумие?",
+      "personName": "Владимир Салаш",
+      "imageUrl": "data/sisyphus.png",
+      "description": "Многократно сдавать реджекнутую задачу без изменений"
+    },
+    {
+        "achievement": "Покаталась на такси",
+        "personName": "Дарья",
+        "imageUrl": "data/sisyphus.png",
+        "description":"Хотела поехать на бизнесе, но приехал К+"
+      },
+      {
+        "achievement": "Проснулась",
+        "personName": "Дашка",
+        "imageUrl": "data/sisyphus.png",
+        "description":"Встала с кровати вовремя"
+      },
+      {
+        "achievement": "Поела",
+        "personName": "Дарич",
+        "imageUrl": "data/sisyphus.png",
+        "description":"И поела завтрак"
+      },
+      {
+          "achievement": "Покаталась на такси",
+          "personName": "Дарья",
+          "imageUrl": "data/sisyphus.png",
+          "description":"Хотела поехать на бизнесе, но приехал К+"
+        }
+  ]
+

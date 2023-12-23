@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+#achievementsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.achievement {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.achievement img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.achievement:hover img {
+    transform: scale(1.2);
+}
+
+.achievement p {
+    margin: 0; /* Убирает внешний отступ у абзацев в блоке .achievement */
+}
+
+.achievement .description {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 200px;
+    text-align: left;
+}
+
+.achievement:hover .description {
+    display: block;
+}
+
+.achievement .description p {
+    margin-bottom: 5px; /* Уменьшает нижний отступ у абзацев в описании */
+}
+
+.achievement .description strong {
+    display: block;
+    margin-bottom: 5px; /* Уменьшает нижний отступ у жирного текста в описании */
+}
