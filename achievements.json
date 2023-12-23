@@ -1,11 +1,5 @@
 [
     {
-      "achievement": "Ну молодец!",
-      "personName": "Миша Филитов",
-      "imageUrl": "data/misha.png",
-      "description":"И поел, и на столе прибрался, и в магазин сходил"
-    },
-    {
       "achievement": "Что такое безумие?",
       "personName": "Владимир Салаш",
       "imageUrl": "data/sisyphus.png",
@@ -28,6 +22,12 @@
       "personName": "Билый Александр",
       "imageUrl": "data/unstoppable.png",
       "description": "Не сдаваться и сдать задачу за 55 попыток."
+    },
+    {
+      "achievement": "Ну молодец!",
+      "personName": "Миша Филитов",
+      "imageUrl": "data/misha.png",
+      "description":"И поел, и на столе прибрался, и в магазин сходил"
     }
   ]
 
