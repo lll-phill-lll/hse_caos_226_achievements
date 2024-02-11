@@ -24,6 +24,12 @@
       "description": "Не сдаваться и сдать задачу за 55 попыток."
     },
     {
+      "achievement": "Risk it all!",
+      "personName": "Яппаров Эрик",
+      "imageUrl": "data/risk_it_all.png",
+      "description": "Отказаться от автомата 9 и пойти на экзамен, чтобы побороться за 10."
+    },
+    {
       "achievement": "Ну молодец!",
       "personName": "Миша Филитов",
       "imageUrl": "data/misha.png",
