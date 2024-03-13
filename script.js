@@ -25,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 const personElement = document.createElement('p');
                 personElement.innerText = achievementData.personName;
+                personElement.innerHTML = `${achievementData.personName}`;
 
                 const descriptionElement = document.createElement('div');
                 descriptionElement.className = 'description';

@@ -31,7 +31,7 @@
     },
     {
       "achievement": "Смотрят лекции в серфике",
-      "personName": "Векшин Кирилл, Либина Яна",
+      "personName": "Векшин Кирилл,<br />Либина Яна",
       "imageUrl": "data/eat_during_class.jpeg",
       "description": "Выбрать для еды пары вместо ютубчика."
     },
