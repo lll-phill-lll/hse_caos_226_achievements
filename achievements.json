@@ -30,6 +30,12 @@
       "description": "Отказаться от автомата 9 и пойти на экзамен, чтобы побороться за 10."
     },
     {
+      "achievement": "Смотрят лекции в серфике",
+      "personName": "Векшин Кирилл, Либина Яна",
+      "imageUrl": "data/eat_during_class.jpeg",
+      "description": "Выбрать для еды пары вместо ютубчика."
+    },
+    {
       "achievement": "Ну молодец!",
       "personName": "Миша Филитов",
       "imageUrl": "data/misha.png",
